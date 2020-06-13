@@ -6,3 +6,4 @@ Lexical_analysis.py为词法分析
 Parser.py为语法分析（LL(1)）  
 Semantic_analysis.py为语义分析并生成中间代码（四元式）  
 Trans_to_assembly.py为目标代码生成（汇编语言）  
+只能编译一些简单的语句

@@ -5,7 +5,6 @@ def trans():
     global four,result ,AX, BX,CX
     result = []
     t = []
-    AX,BX,CX = ["-1",0],["-1",0],["-1",0] #变量名，变量值
     data = [-1]*100
 
     rule = {

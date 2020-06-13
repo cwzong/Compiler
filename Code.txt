@@ -1,0 +1,14 @@
+int main(){
+int i = 0;
+   if(a<=0)
+   {
+        b = 1*2;
+   }
+   else
+   {
+        while(a<0)
+        {
+            a--;
+        }
+   }
+}

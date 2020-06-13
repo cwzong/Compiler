@@ -246,12 +246,14 @@ def fun_25():
     goon(1)
     goon(1)
     print("--------------------------------")
+    print(temp)
     if temp[-2][1] != "=" and temp[-3][1] != "=":
         print(("j" + str(temp[-2][1]), temp[-3][1], temp[-1][1], len(four) + 3))
         four += [("j" + str(temp[-2][1]), temp[-3][1], temp[-1][1], len(four) + 3)]
     elif temp[-2][1] != "=" :
-        print((str(temp[-3][1]), temp[-2][1], temp[-1][1], len(four) + 3))
-        four += [(str(temp[-3][1]), temp[-2][1], temp[-1][1], len(four) + 3)]
+        if temp[-3][1] != "=":
+            print((str(temp[-3][1]), temp[-2][1], temp[-1][1], len(four) + 3))
+            four += [(str(temp[-3][1]), temp[-2][1], temp[-1][1], len(four) + 3)]
 
     print(temp)
     temp[-2] = temp[-1]
@@ -465,6 +467,16 @@ def fun_45():
     four+=[("PRINT",temp[-3][1],"_","_")]
     temp=temp[:-6]
     return  0
+
+def fun_46():
+    global Parser_r1, Parser_r2, temp, four
+    Parser_r1 = Parser_r1[1:]
+    goon(2)
+    goon(1)
+    temp [-2] =temp [-1]
+    temp=temp[:-1]
+    temp[-1] = [temp[-1][0],-temp[-1][1],temp[-1][2]]
+    return 0
 
 def main():
     global temp, Parser_r1, Parser_r2 ,ntemp,four

@@ -1,14 +1,14 @@
 int main(){
-int i = 0;
-   if(a<=0)
+   int a = 1;
+   if (a>0)
    {
-        b = 1*2;
-   }
-   else
+    for(a>1;a<10;a++)
+    {
+        a=a+10;
+    }
+   }else
    {
-        while(a<0)
-        {
-            a--;
-        }
+    a=a/a;
    }
+
 }
